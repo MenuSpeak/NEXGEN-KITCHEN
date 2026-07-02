@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">   
       
-<head>
+<head>  
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>NEXGEN KITCHEN</title>
@@ -1324,8 +1324,7 @@ text-decoration:none;
                 </h4>
 
                 <div class="delivery-option-buttons">
-                    <!-- RESTAURANT SECTION REMOVED
-<button class="option-btn active" id="restaurantOption"
+                    <button class="option-btn active" id="restaurantOption"
                         onclick="selectDeliveryOption('restaurant')">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
@@ -1334,7 +1333,6 @@ text-decoration:none;
                         </svg>
                         Restaurant
                     </button>
--->
                     <button class="option-btn" id="homeDeliveryOption" onclick="selectDeliveryOption('home')">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
@@ -1345,15 +1343,13 @@ text-decoration:none;
                 </div>
 
                 <!-- Restaurant Form -->
-                <!-- RESTAURANT SECTION REMOVED
-<div class="delivery-form active" id="restaurantForm">
+                <div class="delivery-form active" id="restaurantForm">
                     <div class="form-group">
                         <label class="form-label" for="tableNumber">Table Number</label>
                         <input type="text" id="tableNumber" class="form-input"
                             placeholder="Enter your table number (e.g., Table 5, Booth 2)" />
                     </div>
                 </div>
--->
 
                 <!-- Home Delivery Form -->
                 <div class="delivery-form" id="homeDeliveryForm">
@@ -1436,7 +1432,7 @@ text-decoration:none;
         
         // Cart functionality    
         let cart = [];
-        let deliveryType = 'home'; // Default to restaurant
+        let deliveryType = 'restaurant'; // Default to restaurant
         const cartButton = document.getElementById('cartButton');
         const cartModal = document.getElementById('cartModal');
         const closeCart = document.getElementById('closeCart');
@@ -1795,7 +1791,7 @@ text-decoration:none;
         // Initialize the page
         document.addEventListener('DOMContentLoaded', () => {
             // Set default delivery option
-            selectDeliveryOption('home');
+            selectDeliveryOption('restaurant');
 
             // Render menu items
             renderMenuItems(data);
