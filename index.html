@@ -1143,7 +1143,7 @@
     <div class="container">  
         <!-- Cafe Header - Original Style -->
         <div class="cafe-header">
-<img src="logo.png" alt="Logo" style="width:400px; height:auto; display:block; margin:0 auto;">
+<img src="logo.jpeg" alt="Logo" style="width:400px; height:auto; display:block; margin:0 auto;">
             <div class="cafe-name">NEX GEN KITCHEN</div>
             <div class="cafe-subtitle">Stomach Never Lies</div>
             <div class="location-info">
@@ -1252,8 +1252,9 @@ text-decoration:none;
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="Morning Breakfast">🌅 Morning Breakfast</button>
-<button class="tab" data-cat="Healthy Add-Ons">🥗 Healthy Add-Ons</button>
+<button class="tab" data-cat="Menu">📋 Menu</button>
+<button class="tab" data-cat="Served With">🥣 Served With</button>
+<button class="tab" data-cat="Healthy Add Ons">🥗 Healthy Add Ons</button>
    </div>  
                 </div>
             </div>
@@ -1399,21 +1400,26 @@ text-decoration:none;
         // Menu Data - FIXED VERSION
         const data = [
 
-{"id": 1, "cat": "Morning Breakfast", "name": "इडली (४ पीस) | Idli (4 pieces)", "price": "Rs. 75", "desc": "Idli (4 pieces) Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Idli"], "img": "img/idli_4_pieces.jpeg"},
-{"id": 2, "cat": "Morning Breakfast", "name": "प्लेन डोसा (२ पीस) | Plain Dosa (2 pieces)", "price": "Rs. 75", "desc": "Plain Dosa (2 pieces) Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Dosa"], "img": "img/plain_dosa_2_pieces.jpeg"},
-{"id": 3, "cat": "Morning Breakfast", "name": "पोडी डोसा | Podi Dosa", "price": "Rs. 75", "desc": "Podi Dosa Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Dosa"], "img": "img/podi_dosa.jpeg"},
-{"id": 4, "cat": "Morning Breakfast", "name": "बेन्ने बटर पोडी डोसा | Benne Butter Podi Dosa", "price": "Rs. 85", "desc": "Benne Butter Podi Dosa Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Dosa"], "img": "img/benne_butter_podi_dosa.jpeg"},
-{"id": 5, "cat": "Morning Breakfast", "name": "घी पोडी डोसा | Ghee Podi Dosa", "price": "Rs. 100", "desc": "Ghee Podi Dosa Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Dosa"], "img": "img/ghee_podi_dosa.jpeg"},
-{"id": 6, "cat": "Morning Breakfast", "name": "स्पायसी डोसा (२ पीस) | Spicy Dosa (2 pieces)", "price": "Rs. 100", "desc": "Spicy Dosa (2 pieces) Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Dosa"], "img": "img/spicy_dosa_2_pieces.jpeg"},
-{"id": 7, "cat": "Morning Breakfast", "name": "डाळ वडा (४ पीस) | Dal Vada (4 pieces)", "price": "Rs. 75", "desc": "Dal Vada (4 pieces) Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Vada"], "img": "img/dal_vada_4_pieces.jpeg"},
-{"id": 8, "cat": "Morning Breakfast", "name": "मेदू वडा (४ पीस) | Medu Vada (4 pieces)", "price": "Rs. 75", "desc": "Medu Vada (4 pieces) Served with Peanut Chutney, Tomato Chutney, Sambar", "tags": ["Veg", "Breakfast", "South Indian", "Vada"], "img": "img/medu_vada_4_pieces.jpeg"},
-{"id": 9, "cat": "Morning Breakfast", "name": "नाचणी माल्ट (२०० मिली) | Finger Millet Malt (200 ml)", "price": "Rs. 55", "desc": "Finger Millet Malt (200 ml)", "tags": ["Veg", "Breakfast", "Beverage"], "img": "img/finger_millet_malt_200_ml.jpeg"},
-{"id": 10, "cat": "Healthy Add-Ons", "name": "काकडीचे तुकडे | Cucumber Pieces", "price": "Rs. 20", "desc": "Cucumber Pieces", "tags": ["Veg", "Add-On", "Healthy"], "img": "img/cucumber_pieces.jpeg"},
-{"id": 11, "cat": "Healthy Add-Ons", "name": "गाजराचे तुकडे | Carrot Pieces", "price": "Rs. 20", "desc": "Carrot Pieces", "tags": ["Veg", "Add-On", "Healthy"], "img": "img/carrot_pieces.jpeg"},
-{"id": 12, "cat": "Healthy Add-Ons", "name": "भिजवलेले बदाम (५ पीस) | Soaked Almonds (5 pcs)", "price": "Rs. 20", "desc": "Soaked Almonds (5 pcs)", "tags": ["Veg", "Add-On", "Healthy"], "img": "img/soaked_almonds_5_pcs.jpeg"},
-{"id": 13, "cat": "Healthy Add-Ons", "name": "भिजवलेले काळे हरभरे (५० ग्रॅम) | Soaked Kala Channa (50 g)", "price": "Rs. 20", "desc": "Soaked Kala Channa (50 g)", "tags": ["Veg", "Add-On", "Healthy"], "img": "img/soaked_kala_channa_50_g.jpeg"},  
-          
- 
+
+{"id": 1, "cat": "Menu", "name": "Idli (4pieces)", "price": "Rs. 80", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Idli"], "img": "img/idli_4pieces.jpeg"},
+{"id": 2, "cat": "Menu", "name": "Plain dosa (2pieces)", "price": "Rs. 80", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa"], "img": "img/plain_dosa_2pieces.jpeg"},
+{"id": 3, "cat": "Menu", "name": "Butter plain dosa (1 piece)", "price": "Rs. 75", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Butter"], "img": "img/butter_plain_dosa_1_piece.jpeg"},
+{"id": 4, "cat": "Menu", "name": "Ghee plain dosa (1piece)", "price": "Rs. 85", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Ghee"], "img": "img/ghee_plain_dosa_1piece.jpeg"},
+{"id": 5, "cat": "Menu", "name": "Podi dosa (1 piece)", "price": "Rs. 80", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Podi"], "img": "img/podi_dosa_1_piece.jpeg"},
+{"id": 6, "cat": "Menu", "name": "Butter podi dosa (1 piece)", "price": "Rs. 90", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Podi", "Butter"], "img": "img/butter_podi_dosa_1_piece.jpeg"},
+{"id": 7, "cat": "Menu", "name": "Ghee podi dosa (1piece)", "price": "Rs. 100", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Podi", "Ghee"], "img": "img/ghee_podi_dosa_1piece.jpeg"},
+{"id": 8, "cat": "Menu", "name": "Spicy dosa (2 pieces)", "price": "Rs. 110", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Dosa", "Spicy"], "img": "img/spicy_dosa_2_pieces.jpeg"},
+{"id": 9, "cat": "Menu", "name": "Medu vada (4 pieces)", "price": "Rs. 80", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Vada"], "img": "img/medu_vada_4_pieces.jpeg"},
+{"id": 10, "cat": "Menu", "name": "Dal vada (4pieces)", "price": "Rs. 80", "desc": "Served with Coconut and peanut (mix) chutney, Tomato chutney, Sambar", "tags": ["Veg", "South Indian", "Vada"], "img": "img/dal_vada_4pieces.jpeg"},
+{"id": 11, "cat": "Menu", "name": "Finger millet malt (200ml)", "price": "Rs. 60", "desc": "Healthy drink", "tags": ["Veg", "South Indian", "Beverage"], "img": "img/finger_millet_malt.jpeg"},
+{"id": 12, "cat": "Served With", "name": "Coconut and peanut (mix) chutney", "price": "Included", "desc": "Accompaniment served with main dishes", "tags": ["Veg", "Chutney", "Side"], "img": "img/coconut_peanut_mix_chutney.jpeg"},
+{"id": 13, "cat": "Served With", "name": "Tomato chutney", "price": "Included", "desc": "Accompaniment served with main dishes", "tags": ["Veg", "Chutney", "Side"], "img": "img/tomato_chutney.jpeg"},
+{"id": 14, "cat": "Served With", "name": "Sambar", "price": "Included", "desc": "Accompaniment served with main dishes", "tags": ["Veg", "Sambar", "Side"], "img": "img/sambar.jpeg"},
+{"id": 15, "cat": "Healthy Add Ons", "name": "Cucumber", "price": "Rs. 20", "desc": "Healthy Add On", "tags": ["Veg", "Add Ons", "Healthy"], "img": "img/cucumber.jpeg"},
+{"id": 16, "cat": "Healthy Add Ons", "name": "Carrot", "price": "Rs. 20", "desc": "Healthy Add On", "tags": ["Veg", "Add Ons", "Healthy"], "img": "img/carrot.jpeg"},
+{"id": 17, "cat": "Healthy Add Ons", "name": "Badam (5pieces)", "price": "Rs. 20", "desc": "Healthy Add On", "tags": ["Veg", "Add Ons", "Healthy"], "img": "img/badam_5pieces.jpeg"},
+{"id": 18, "cat": "Healthy Add Ons", "name": "Soaked kala chana (50gms)", "price": "Rs. 20", "desc": "Healthy Add On", "tags": ["Veg", "Add Ons", "Healthy"], "img": "img/soaked_kala_chana_50gms.jpeg"}
+
     ];
         
         // Cart functionality    
