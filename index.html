@@ -1324,7 +1324,8 @@ text-decoration:none;
                 </h4>
 
                 <div class="delivery-option-buttons">
-                    <button class="option-btn active" id="restaurantOption"
+                    <!-- RESTAURANT SECTION REMOVED
+<button class="option-btn active" id="restaurantOption"
                         onclick="selectDeliveryOption('restaurant')">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
@@ -1333,6 +1334,7 @@ text-decoration:none;
                         </svg>
                         Restaurant
                     </button>
+-->
                     <button class="option-btn" id="homeDeliveryOption" onclick="selectDeliveryOption('home')">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path
@@ -1343,13 +1345,15 @@ text-decoration:none;
                 </div>
 
                 <!-- Restaurant Form -->
-                <div class="delivery-form active" id="restaurantForm">
+                <!-- RESTAURANT SECTION REMOVED
+<div class="delivery-form active" id="restaurantForm">
                     <div class="form-group">
                         <label class="form-label" for="tableNumber">Table Number</label>
                         <input type="text" id="tableNumber" class="form-input"
                             placeholder="Enter your table number (e.g., Table 5, Booth 2)" />
                     </div>
                 </div>
+-->
 
                 <!-- Home Delivery Form -->
                 <div class="delivery-form" id="homeDeliveryForm">
@@ -1432,7 +1436,6 @@ text-decoration:none;
         
         // Cart functionality    
         let cart = [];
-        // let deliveryType = 'restaurant';
         let deliveryType = 'home'; // Default to restaurant
         const cartButton = document.getElementById('cartButton');
         const cartModal = document.getElementById('cartModal');
@@ -1462,13 +1465,11 @@ text-decoration:none;
             deliveryType = type;
 
             // Update button states
-            // document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
-            document.getElementById('restaurantOption')?.classList.toggle('active', type === 'restaurant');
+            document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
             document.getElementById('homeDeliveryOption').classList.toggle('active', type === 'home');
 
             // Show/hide forms
-            // document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
-            document.getElementById('restaurantForm')?.classList.toggle('active', type === 'restaurant');
+            document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
             document.getElementById('homeDeliveryForm').classList.toggle('active', type === 'home');
 
             // Update details summary
@@ -1794,7 +1795,6 @@ text-decoration:none;
         // Initialize the page
         document.addEventListener('DOMContentLoaded', () => {
             // Set default delivery option
-            // selectDeliveryOption('restaurant');
             selectDeliveryOption('home');
 
             // Render menu items
@@ -1815,7 +1815,7 @@ text-decoration:none;
             });
 
             // Update details summary when form inputs change
-            // document.getElementById('tableNumber').addEventListener('input', updateCustomerDetailsSummary);
+            document.getElementById('tableNumber').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerName').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerMobile').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerAddress').addEventListener('input', updateCustomerDetailsSummary);
