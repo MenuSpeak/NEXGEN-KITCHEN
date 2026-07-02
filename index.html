@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">   
       
-<head>  
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>NEXGEN KITCHEN</title>
@@ -1432,7 +1432,8 @@ text-decoration:none;
         
         // Cart functionality    
         let cart = [];
-        let deliveryType = 'restaurant'; // Default to restaurant
+        // let deliveryType = 'restaurant';
+        let deliveryType = 'home'; // Default to restaurant
         const cartButton = document.getElementById('cartButton');
         const cartModal = document.getElementById('cartModal');
         const closeCart = document.getElementById('closeCart');
@@ -1461,11 +1462,13 @@ text-decoration:none;
             deliveryType = type;
 
             // Update button states
-            document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
+            // document.getElementById('restaurantOption').classList.toggle('active', type === 'restaurant');
+            document.getElementById('restaurantOption')?.classList.toggle('active', type === 'restaurant');
             document.getElementById('homeDeliveryOption').classList.toggle('active', type === 'home');
 
             // Show/hide forms
-            document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
+            // document.getElementById('restaurantForm').classList.toggle('active', type === 'restaurant');
+            document.getElementById('restaurantForm')?.classList.toggle('active', type === 'restaurant');
             document.getElementById('homeDeliveryForm').classList.toggle('active', type === 'home');
 
             // Update details summary
@@ -1791,7 +1794,8 @@ text-decoration:none;
         // Initialize the page
         document.addEventListener('DOMContentLoaded', () => {
             // Set default delivery option
-            selectDeliveryOption('restaurant');
+            // selectDeliveryOption('restaurant');
+            selectDeliveryOption('home');
 
             // Render menu items
             renderMenuItems(data);
@@ -1811,7 +1815,7 @@ text-decoration:none;
             });
 
             // Update details summary when form inputs change
-            document.getElementById('tableNumber').addEventListener('input', updateCustomerDetailsSummary);
+            // document.getElementById('tableNumber').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerName').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerMobile').addEventListener('input', updateCustomerDetailsSummary);
             document.getElementById('customerAddress').addEventListener('input', updateCustomerDetailsSummary);
