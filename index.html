@@ -840,6 +840,47 @@
             color: var(--gold2);
         }
 
+        /* Payment QR Code Section */
+        .payment-qr-section {
+            margin: 15px 0;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .payment-qr-section h4 {
+            font-family: var(--ff-heading);
+            color: var(--gold2);
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .payment-qr-section img {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            object-fit: cover;
+            background: white;
+            padding: 8px;
+        }
+
+        .payment-qr-section .qr-label {
+            display: block;
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .payment-qr-section .upi-text {
+            color: var(--gold1);
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
         .cart-actions {
             display: flex;
             flex-direction: column;
@@ -901,7 +942,7 @@
             font-size: 16px;
         }
 
-        /* Delivery Options in Cart - Only Home Delivery Now */
+        /* Delivery Options in Cart - Only Home Delivery */
         .delivery-options {
             margin: 20px 0;
             padding: 20px;
@@ -1313,6 +1354,14 @@ text-decoration:none;
             <div class="cart-total">
                 <span>Total:</span>
                 <span class="total-amount" id="cartTotal">₹0</span>
+            </div>
+
+            <!-- Payment QR Code Section - Added below total -->
+            <div class="payment-qr-section">
+                <h4>📱 Scan to Pay</h4>
+                <img src="payment_qr.png" alt="Payment QR Code" id="paymentQR">
+                <span class="qr-label">UPI / Google Pay / PhonePe / Paytm</span>
+                <div class="upi-text">Pay securely via UPI</div>
             </div>
 
             <div class="cart-actions">
